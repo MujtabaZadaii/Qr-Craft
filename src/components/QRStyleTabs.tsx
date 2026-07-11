@@ -9,6 +9,7 @@ import { ThemePresets, themePresets, ThemePreset } from './ThemePresets';
 import { BodyShapeSelector, BodyShape } from './BodyShapeSelector';
 import { ColorPicker } from './ColorPicker';
 import { SizeSelector } from './SizeSelector';
+import { LogoPicker } from './LogoPicker';
 
 export type FrameStyle = 'square' | 'rounded-sm' | 'rounded-md' | 'rounded-lg' | 'rounded-left' | 'rounded-right' | 'pill-h' | 'pill-v' | 'circle';
 
@@ -356,6 +357,12 @@ export function QRStyleTabs({
               onBgGradientChange?.(null);
             }}
           />
+        </div>
+
+        {/* Logo / Emoji */}
+        <div className="space-y-3">
+          <p className="text-sm font-medium text-foreground">Logo</p>
+          <LogoPicker logo={logo} onLogoChange={onLogoChange} />
         </div>
 
         {/* Size Selector */}
