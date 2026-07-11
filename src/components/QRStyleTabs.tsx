@@ -359,6 +359,12 @@ export function QRStyleTabs({
           />
         </div>
 
+        {/* Logo / Emoji */}
+        <div className="space-y-3">
+          <p className="text-sm font-medium text-foreground">Logo</p>
+          <LogoPicker logo={logo} onLogoChange={onLogoChange} />
+        </div>
+
         {/* Size Selector */}
         <div className="space-y-3">
           <p className="text-sm font-medium text-foreground">Download Size</p>
