@@ -1,62 +1,202 @@
-# QRCraft - Beautiful QR Code Generator
+# 🚀 QRCraft
 
-Made by **Mujtaba Hyder** with help of AI.
+A modern, feature-rich QR Code Generator built with **React**, **Vite**, **Tailwind CSS**, and **shadcn/ui**. QRCraft allows users to create beautiful, fully customizable QR codes with logo support, multiple data types, and high-resolution exports.
 
-A beautiful, customizable QR code generator built with React, Vite, Tailwind CSS, and shadcn/ui. File uploads and database rate limiting are handled securely using **Firebase**.
+> Developed by **Mujtaba Hyder**
 
-## Features
-- Clean, modern, and beautiful UI.
-- Generates high-quality QR codes for Links, Text, SMS, WhatsApp, Wi-Fi, and Email.
-- Advanced Customization: Change colors, dots style, and corners.
-- Upload custom logos to place at the center of the QR code (Firebase Storage).
+🌐 **Live Demo:** https://your-live-demo-url.com
 
 ---
 
-## 🚀 How to Clone and Setup Locally
+## ✨ Overview
 
-Follow these steps to run the project on your local machine:
+QRCraft is designed to make QR code generation simple, powerful, and visually appealing. It supports multiple QR formats, advanced customization, and secure cloud storage for uploaded logos using Firebase.
 
-### 1. Clone the repository
+Whether you need a QR code for a website, Wi-Fi network, social media, business card, or personal use, QRCraft provides an intuitive interface with real-time preview and instant downloads.
+
+---
+
+## ✨ Features
+
+- 🎨 Beautiful and responsive interface
+- ⚡ Instant QR code generation
+- 🌈 Fully customizable colors
+- 🔘 Multiple QR dot styles
+- ⬜ Custom corner styles
+- 🖼 Upload logos with Firebase Storage
+- 📱 Generate QR codes for:
+  - Website URLs
+  - Plain Text
+  - Email
+  - SMS
+  - WhatsApp
+  - Wi-Fi Networks
+- 📥 Download high-quality PNG images
+- 🚀 Fast performance powered by Vite
+- ☁ Secure logo uploads using Firebase
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- Tailwind CSS
+- shadcn/ui
+- JavaScript (ES6+)
+
+### Backend Services
+
+- Firebase Authentication *(optional)*
+- Firebase Firestore
+- Firebase Storage
+
+### Deployment
+
+- Vercel
+
+---
+
+## 📁 Project Structure
+
+```text
+QRCraft/
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── hooks/
+│   ├── lib/
+│   ├── App.jsx
+│   └── main.jsx
+├── .env.example
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+---
+
+# ⚙️ Getting Started
+
+## Clone the Repository
+
 ```bash
 git clone https://github.com/MujtabaZadaii/remix-of-craft-qr.git
+```
+
+```bash
 cd remix-of-craft-qr
 ```
 
-### 2. Install Dependencies
-Make sure you have Node.js installed, then run:
+---
+
+## Install Dependencies
+
 ```bash
 npm install
 ```
 
-### 3. Setup Firebase (Backend)
-This app requires Firebase to handle logo uploads. 
-1. Create a project at [Firebase Console](https://console.firebase.google.com/).
-2. Enable **Firestore Database** and **Storage**. Set their security rules to `allow read, write: if true;` for testing.
-3. Copy the `.env.example` file and rename it to `.env`:
-   ```bash
-   cp .env.example .env
-   ```
-4. Open the `.env` file and replace the placeholder values with your actual Firebase Configuration keys.
+---
 
-### 4. Run the Development Server
+## Configure Firebase
+
+Create a Firebase project from the Firebase Console.
+
+Enable:
+
+- Firestore Database
+- Firebase Storage
+
+Copy the example environment file:
+
 ```bash
-npm run dev
+cp .env.example .env
 ```
-Your app will now be running at `http://localhost:8080/` (or the port specified in the terminal).
+
+Update the `.env` file with your Firebase credentials.
+
+```env
+VITE_FIREBASE_API_KEY=
+VITE_FIREBASE_AUTH_DOMAIN=
+VITE_FIREBASE_PROJECT_ID=
+VITE_FIREBASE_STORAGE_BUCKET=
+VITE_FIREBASE_MESSAGING_SENDER_ID=
+VITE_FIREBASE_APP_ID=
+```
 
 ---
 
-## 🌐 How to Deploy (Vercel)
+## Run the Development Server
 
-This frontend application is configured to be deployed easily on **Vercel**:
+```bash
+npm run dev
+```
 
-1. Install Vercel CLI (if you haven't already):
-   ```bash
-   npm i -g vercel
-   ```
-2. Run the deployment command:
-   ```bash
-   vercel
-   ```
-3. Follow the prompts (press `Enter` to use default Vite settings).
-4. **Important**: Go to your Vercel Project Dashboard -> **Settings** -> **Environment Variables** and paste all your `.env` keys there so the live site can connect to Firebase!
+Open your browser:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📦 Build for Production
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+---
+
+# 🌐 Deployment
+
+QRCraft is optimized for deployment on **Vercel**.
+
+Deploy directly from GitHub or using the Vercel CLI.
+
+```bash
+vercel
+```
+
+After deployment, add the same Firebase environment variables inside:
+
+**Vercel Dashboard → Project Settings → Environment Variables**
+
+Redeploy the project after saving the variables.
+
+---
+
+## 📸 Screenshots
+
+> Add screenshots or GIFs showcasing the application interface.
+
+---
+
+## 👨‍💻 Author
+
+**Mujtaba Hyder**
+
+- GitHub: https://github.com/MujtabaZadaii
+- Portfolio: https://zadaiir.netlify.app/
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License**.
