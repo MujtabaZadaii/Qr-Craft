@@ -4,7 +4,7 @@ A modern, feature-rich QR Code Generator built with **React**, **Vite**, **Tailw
 
 > Developed by **Mujtaba Hyder**
 
-🌐 **Live Demo:** https://your-live-demo-url.com
+🌐 **Live Demo:** qr-mujtaba.vercel.app/
 
 ---
 
@@ -184,10 +184,10 @@ Redeploy the project after saving the variables.
 
 ## 👨‍💻 Author
 
-**Mujtaba Hyder**
+**Mujtaba Hyder (Mujtaba Zadaii)**
 
 - GitHub: https://github.com/MujtabaZadaii
-- Portfolio: https://zadaiir.netlify.app/
+
 
 ---
 
